@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ghani Murtafa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ghani Murtafa — Home</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; color: #222; }
-    header { text-align: center; margin-bottom: 30px; }
-    main { max-width: 600px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px #0001; }
-    h1 { color: #0a7; }
-    footer { text-align: center; margin-top: 30px; color: #888; font-size: 0.9em; }
-    a { color: #0a7; text-decoration: none; }
+    :root { --brand: #0a7; --ink:#222; --muted:#888; --bg:#f9f9f9; --card:#fff; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 40px; background: var(--bg); color: var(--ink); }
+    header { text-align: center; margin-bottom: 20px; }
+    h1 { color: var(--brand); margin-bottom: 6px; }
+    .tagline { color: var(--muted); margin-top: 0; }
+    nav { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 18px 0 24px; }
+    nav a {
+      color: var(--brand); text-decoration: none; padding: 8px 12px; border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    nav a:hover { background: #e6fff7; border-color: #bff3e5; }
+    nav a.active { background: #dffaf1; border-color: #bff3e5; font-weight: bold; }
+    main {
+      max-width: 720px; margin: 0 auto; background: var(--card); padding: 24px;
+      border-radius: 8px; box-shadow: 0 2px 6px #0001;
+    }
+    h2 { color: var(--brand); margin-top: 0; }
+    footer { text-align: center; margin-top: 30px; color: var(--muted); font-size: 0.9em; }
+    a { color: var(--brand); }
     a:hover { text-decoration: underline; }
+    /* Small screens */
+    @media (max-width: 560px) {
+      body { margin: 20px; }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Ghani Murtafa</h1>
-    <p>This is my new website</p>
+    <p class="tagline">This is my new website</p>
+
+    <!-- Top navigation -->
+    <nav aria-label="Main">
+      index.htmlHome</a>
+      about.htmlAbout</a>
+      <a href="https://murtafa.com/Current Site</a>
+    </nav>
   </header>
+
   <main>
-    <h2>About</h2>
-    <p>This is a new website for me to learn how to make a website using HTML and CSS.</p>
+    <h2>Welcome</h2>
+    <p>
+      I’m learning how to build websites using HTML and CSS. This simple site has a navigation
+      menu and an <strong>About</strong> subpage to get started.
+    </p>
+
     <h2>Contact</h2>
-    <p>Find my current website <a href="https://www.ghanimurtafa.com//">here</a>.</p>
+    <p>
+      Find my current website https://www.ghanimurtafa.com/here</a>.
+    </p>
   </main>
+
   <footer>
     &copy; 2025 Ghani Murtafa
   </footer>
